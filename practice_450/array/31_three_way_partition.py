@@ -51,7 +51,44 @@ def three_way_partition(arr: [], a, b):
     return arr
 
 
+def three_way_partition_v(arr: [], a, b):
+    n = len(arr)
+    first_dict = {}
+    middle_dict = {}
+    end_dict = {}
+    result_arr = []
+    for i in range(0, n):
+        element = arr[i]
+        if element < a:
+            set_value_in_dict(element, first_dict)
+        if a <= element < b:
+            set_value_in_dict(element, middle_dict)
+        if b <= element:
+            set_value_in_dict(element, end_dict)
+
+    set_arr_from_keys(result_arr, first_dict)
+    set_arr_from_keys(result_arr, middle_dict)
+    set_arr_from_keys(result_arr, end_dict)
+
+    return result_arr
+
+
+def set_arr_from_keys(arr: [], dict_value:{}):
+    for key in dict_value.keys():
+        count = dict_value[key]
+        for i in range(0, count):
+            arr.append(key)
+
+
+def set_value_in_dict(element, dict_value: {}):
+    if element in dict_value:
+        dict_value[element] = dict_value[element] + 1
+    else:
+        dict_value[element] = 1
+
+
 if __name__ == '__main__':
     # print(three_way_partition([1, 2, 3, 3, 4], 1, 2))
     # print(three_way_partition([1, 2, 3], 1, 3))
     print(three_way_partition([87, 78, 16, 94], 36, 72))
+    print(three_way_partition_v([87, 78, 16, 94], 36, 72))
