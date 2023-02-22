@@ -73,7 +73,7 @@ def three_way_partition_v(arr: [], a, b):
     return result_arr
 
 
-def set_arr_from_keys(arr: [], dict_value:{}):
+def set_arr_from_keys(arr: [], dict_value: {}):
     for key in dict_value.keys():
         count = dict_value[key]
         for i in range(0, count):

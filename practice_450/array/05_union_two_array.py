@@ -28,21 +28,20 @@ def intersection_two_array(arr1: [], n, arr2: [], m):
 
 def union_two_array(arr1: [], n, arr2: [], m):
     common_element = intersection_two_array(arr1, n, arr2, m)
-    total_element = n+m
+    total_element = n + m
     return total_element - common_element
 
 
 def union_two_array_v2(arr1: [], n, arr2: [], m):
     final_dict = {}
-    for i in range(0,n):
+    for i in range(0, n):
         element = arr1[i]
         final_dict[element] = 1
-    for i in range(0,m):
+    for i in range(0, m):
         element = arr2[i]
         final_dict[element] = 1
 
     return len(final_dict.keys())
-
 
 
 if __name__ == '__main__':

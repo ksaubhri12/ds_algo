@@ -16,4 +16,4 @@ def move_negative_element(arr: [], n):
 
 
 if __name__ == '__main__':
-    print(move_negative_element([-8 ,9, 5, 10, 2, 6, -7, 7], 8))
+    print(move_negative_element([-8, 9, 5, 10, 2, 6, -7, 7], 8))

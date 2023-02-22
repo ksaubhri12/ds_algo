@@ -19,7 +19,7 @@ def min_swaps(arr: [], n, k):
         if arr[end] > k:
             bad_count = bad_count + 1
 
-        if arr[start-1] > k:
+        if arr[start - 1] > k:
             bad_count = bad_count - 1
         ans = min(ans, bad_count)
 

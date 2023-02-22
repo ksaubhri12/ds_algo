@@ -1,7 +1,7 @@
 def duplicate_in_array(arr: [], n):
     arr = sorted(arr)
-    for i in range(1,n):
-        if arr[i] == arr[i-1]:
+    for i in range(1, n):
+        if arr[i] == arr[i - 1]:
             return arr[i]
 
 

@@ -6,7 +6,7 @@ def cyclic_move_one_clock_wise(arr: [], n):
         arr[i] = temp
         temp = element_to_pick
 
-    arr[n-1] = temp
+    arr[n - 1] = temp
     arr[0] = last_element
 
     return arr
@@ -14,4 +14,3 @@ def cyclic_move_one_clock_wise(arr: [], n):
 
 if __name__ == '__main__':
     print(cyclic_move_one_clock_wise([1, 2, 3, 4, 5], 5))
-
