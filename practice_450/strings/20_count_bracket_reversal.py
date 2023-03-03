@@ -16,12 +16,24 @@ def count_brackets_reversal(input_string):
                 if not check_pair(element_from_output_stack, element):
                     output_stacks.append(element_from_output_stack)
                     non_pair_closing_count = non_pair_closing_count + 1
+            else:
+                non_pair_closing_count = non_pair_closing_count + 1
 
     open_brackets_count = len(output_stacks)
     closing_brackets_count = non_pair_closing_count
-    # one_flip_count
+    single_flip = open_brackets_count // 2 + closing_brackets_count // 2
+    dual_flip = open_brackets_count % 2 + closing_brackets_count % 2
+
+    return single_flip + dual_flip
 
 
 def check_pair(opening_element, closing_element):
     opening_brackets = {'[': ']', '(': ')', '{': '}'}
     return closing_element == opening_brackets[opening_element]
+
+
+if __name__ == '__main__':
+    print(count_brackets_reversal('}{{}}{{{'))
+    print(count_brackets_reversal('{{}{{{}{{}}{{'))
+    print(count_brackets_reversal('}{}{}{}}}{{{{{}{}{}}{{}{}{}}{{}}{{'))
+
