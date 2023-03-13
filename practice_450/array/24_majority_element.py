@@ -1,3 +1,6 @@
+# This we did using sorting and window of k.
+# This is not exactly majority element Moore's Voting
+
 def majority_element(arr: []):
     n = len(arr)
     k = int(n / 3)

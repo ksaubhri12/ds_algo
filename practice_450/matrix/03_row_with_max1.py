@@ -11,7 +11,6 @@ def row_with_max_1(matrix: [[]]):
     return min_1_index_row
 
 
-
 def binary_search(arr: [], start: int, end: int, k):
     if start >= end and arr[start] == k:
         return start
@@ -30,7 +29,7 @@ def binary_search(arr: [], start: int, end: int, k):
 
 
 if __name__ == '__main__':
-    print(sorted([3,23,4]))
+    print(sorted([3, 23, 4]))
 
     input_matrix = [[0, 1, 1, 1],
                     [0, 0, 1, 1],
