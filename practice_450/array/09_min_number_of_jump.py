@@ -1,7 +1,10 @@
 # Lets start with two pointers. First one is starting
 # Second one is ending. Initially both at 0
 # The Goal is to make ending to last of array.
-# Now at any starting, jump_value for max can be that
+# Now at any starting, jump_value will be equal to the starting.
+# Now I have option to jump from starting to starting + jump such that I can maximize my next jump.
+# Check the jump power of each element from starting+1 to starting+ jump value
+# The element with index will be your next starting pointing and ending point both.
 
 
 def min_number_of_jump(arr: [], n):

@@ -1,3 +1,7 @@
+# Idea is to sort the array.
+# Same element will be together after this
+# If element is equal to its prev element there are duplicate.
+
 def duplicate_in_array(arr: [], n):
     arr = sorted(arr)
     for i in range(1, n):
