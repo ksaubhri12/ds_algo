@@ -1,3 +1,6 @@
+# The idea is to use binary search to see how many elements are common
+# Once you get the common element rest of the element is your union length
+
 def binary_search(arr: [], start: int, end: int, k):
     if start >= end and arr[start] == k:
         return start

@@ -1,3 +1,9 @@
+# Lets start with two pointers. First one is starting
+# Second one is ending. Initially both at 0
+# The Goal is to make ending to last of array.
+# Now at any starting, jump_value for max can be that
+
+
 def min_number_of_jump(arr: [], n):
     starting = 0
     ending = 0

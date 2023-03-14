@@ -1,3 +1,6 @@
+# Run the loop once and check whether the current element is greater than max
+# Run the loop once and check whether the current element is smaller than min
+
 def min_max(arr: [], n: int):
     min_element = arr[0]
     max_element = arr[0]

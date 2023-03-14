@@ -1,3 +1,8 @@
+# Lets build one array where we take the max sum for that index.
+# If we start from first index sum will be equal to the value
+# Now for next element either we can include it in with previous sum
+# Or we can see if current element is itself greater than the sum with last array.
+
 def max_sub_array_sum(arr: [], n):
     max_sum_index_arr = [arr[0]]
 

@@ -1,3 +1,6 @@
+# Take a empty array and store all positive element
+# Take a negative array and store all the negative element
+# Append Negative element after positive element
 def move_negative_element(arr: [], n):
     positive_arr = []
     negative_arr = []

@@ -1,3 +1,6 @@
+# Count number of zero, one and two
+# First add all the zero, then one and then two
+
 def sort_012_array(arr: [], n):
     zero_count = 0
     one_count = 0

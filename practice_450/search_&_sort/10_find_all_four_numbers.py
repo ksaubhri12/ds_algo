@@ -8,7 +8,8 @@ def find_all_four_number(arr: [], k):
                 fourth_value = k - (arr[first] + arr[second] + arr[third])
                 fourth_value_index = binary_search(arr, third + 1, n - 1, fourth_value)
                 if fourth_value_index != -1:
-                    string_key = str(arr[first]) + str(arr[second]) + str(arr[third]) + str(fourth_value)
+                    string_key = str(arr[first]) + "_" + str(arr[second]) + "_" + str(arr[third]) + "_" + str(
+                        fourth_value)
                     final_dict[string_key] = [arr[first], arr[second], arr[third], fourth_value]
     final_arr = []
     for value in final_dict.values():
