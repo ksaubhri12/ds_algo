@@ -17,7 +17,7 @@ class LinkedList:
 
 
 def detect_loop(head):
-    slow = head
+    slow = head.next
     fast = head.next.next
     answer = False
     while slow is not None and fast is not None and fast.next is not None:
@@ -27,7 +27,25 @@ def detect_loop(head):
         slow = slow.next
         fast = fast.next.next
 
-    fast.next.next = None
+    if slow == head and fast == head:
+        slow = head
+        high = head
+        while True:
+            if high.next == slow:
+                high.next = None
+                break
+            else:
+                high = high.next
+
+    else:
+        slow = head
+        while True:
+            if slow.next == fast.next:
+                fast.next = None
+                break
+            else:
+                slow = slow.next
+                fast = fast.next
     return head
 
 
