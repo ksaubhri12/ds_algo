@@ -12,3 +12,11 @@ class LinkedList:
             curr = curr.next
 
         print()
+
+    def get_count(self):
+        count = 0
+        curr = self.head
+        while curr is not None:
+            count = count + 1
+            curr = curr.next
+        return count

@@ -7,12 +7,12 @@ from LinkedList import LinkedList
 def add_1_linked_list(head: Node):
     final_string = ''
     curr = head
-    while curr is not  None:
+    while curr is not None:
         final_string = final_string + str(curr.data)
         curr = curr.next
 
     int_number = int(final_string)
-    return Node(int_number+1)
+    return Node(int_number + 1)
 
 
 if __name__ == '__main__':
