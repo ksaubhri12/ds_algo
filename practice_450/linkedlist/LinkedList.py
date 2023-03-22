@@ -13,6 +13,15 @@ class LinkedList:
 
         print()
 
+    def print_circular_linked_list(self):
+        flg = False
+        temp = self.head
+        while flg == False or temp != self.head:
+            flg = True
+            print(temp.data, end=' ')
+            temp = temp.next
+        print()
+
     def get_count(self):
         count = 0
         curr = self.head
