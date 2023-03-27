@@ -6,7 +6,6 @@ def print_util_min(string_value: str):
     return '.'.join(i for i in string_value)
 
 
-
 def print_ip(string_value: str, len_needed, output_string: str):
     if len_needed <= 0:
         return output_string

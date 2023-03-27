@@ -2,6 +2,8 @@
 # If we start from first index sum will be equal to the value
 # Now for next element either we can include it in with previous sum
 # Or we can see if current element is itself greater than the sum with last array.
+# This case is happening because some of the elements are negative. If all the elements would be positive then
+# the max sub array sum will definitely be equal to sum of all elements.
 
 def max_sub_array_sum(arr: [], n):
     max_sum_index_arr = [arr[0]]
