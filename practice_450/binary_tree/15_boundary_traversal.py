@@ -1,3 +1,8 @@
+# In Boundary Traversal you have to do 3 things
+# 1. Do add all the extreme left node
+# 2. Do add all the leaf node of left and right sub tree
+# 3. Add the right node in reverse order so go to extreme right and then add it.
+
 from Node import Node
 
 

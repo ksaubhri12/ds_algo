@@ -1,3 +1,5 @@
+# Here basically do a level order traversal and at each level, print the first element in the result stack.
+
 from Node import Node
 
 

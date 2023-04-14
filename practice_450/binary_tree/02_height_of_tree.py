@@ -1,3 +1,6 @@
+# Simple recursion. Height of tree is max of left sub tree and right sub tree height + 1
+# For tree which is empty there is no height so we return 0
+
 from Node import Node
 
 

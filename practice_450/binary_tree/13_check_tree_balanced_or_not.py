@@ -1,3 +1,11 @@
+# Do three things in recursive manner
+# check if left portion is valid and return the height
+# check if right portion is valid and return the height
+# now check the diff between height is less than or equal to one and also check if the left and right portion is valid
+# or not. If the height diff is okay and left and right constraint are also okay then return the height of this node
+# and true else false
+
+
 from Node import Node
 
 

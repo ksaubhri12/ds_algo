@@ -1,3 +1,8 @@
+# Basic Tree traversal
+# inorder - left, root, right
+# post order - left, right, root
+# pre order - root, left, right
+
 from Node import Node
 
 

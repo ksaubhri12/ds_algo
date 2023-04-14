@@ -1,3 +1,10 @@
+# do a pre order traversal
+# root, left, right.
+# Here take level in horizontal moving and keep them in dict.
+# For each level accept only one element which is the first element in that level
+# if you go left level will decrease by -1
+# if you go right level will increase by +1
+
 from Node import Node
 
 

@@ -1,3 +1,10 @@
+# Classic BFS approach.
+# Take root node and put it in queue
+# Now run a loop while queue is not empty -> This is more of a terminating condition
+# After that run one more loop inside
+# pop all element and append the left and right of that element in the queue.
+# basically you are popping all the element of a level and making the queue ready for next set of popping
+
 from Node import Node
 
 
@@ -24,7 +31,7 @@ def level_order_traversal_util(root: Node, result_arr):
 
 if __name__ == '__main__':
     node_1 = Node(10)
-    node_2  = Node(20)
+    node_2 = Node(20)
     node_3 = Node(30)
 
     node_1.left = node_2
@@ -37,4 +44,3 @@ if __name__ == '__main__':
     node_2.right = node_5
 
     print(level_order_traversal(node_1))
-

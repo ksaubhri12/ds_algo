@@ -1,5 +1,9 @@
+# At every level traversal maintain a variable as normal which will tell in the final answer
+# we will stack element of that level in straight order or reverse order.
+# if you do straight make normal as false
+# if you do reverse make normal as true
+
 from Node import Node
-from collections import deque
 
 
 def zig_zag_traversal(root: Node):

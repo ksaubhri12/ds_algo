@@ -1,3 +1,7 @@
+# Do in order traversal.
+# maintain head and current pointer
+# when you are handling root in order traversal add the root in the linked list
+
 from Node import Node
 from practice_450.linkedlist.LinkedList import LinkedList
 

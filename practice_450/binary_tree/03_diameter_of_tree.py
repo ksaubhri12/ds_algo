@@ -1,3 +1,8 @@
+# The diameter of tree is basically sum of left and right sub tree + 1. It basically like from one end of tree to
+# another end traversing length so you will traverse in left equal to left tree height and in right right tree height
+# For root it can be different and for any other node it can be different so we have to take max -> that will be
+# the diameter of the tree
+
 from Node import Node
 
 

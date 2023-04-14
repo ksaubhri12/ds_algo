@@ -1,3 +1,10 @@
+# The idea is to append root in the last. Normal append function will add the last element in the last.
+# That is why we have used deque -> A deque is a double ended queue where you can add element in the front and
+# in the back
+# We keep on adding element in front for deque
+# The queue for level -> We will add the right element first and then the left element
+# we will pop only one element from queue and append in front of answer deque using append_left function.
+
 from Node import Node
 from collections import deque
 

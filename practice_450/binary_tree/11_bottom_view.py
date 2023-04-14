@@ -1,3 +1,8 @@
+# In top we were taking root as first and then left and right
+# In bottom we have to take bottom element first for that vertical level so we will go to left node
+# then right node and then root node. This way we will deal with the lead node first
+
+
 from Node import Node
 
 

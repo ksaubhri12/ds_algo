@@ -1,3 +1,8 @@
+# In diagonally you have to add all the right node and you have to address all the left node later.
+# so traverse all the right node and add them in the answer. However for the left node just add them into a queue and
+# after that traverse the queue and do the same for remaining nodes.
+# for starter add the root into the queue by yourself.
+
 from Node import Node
 
 

@@ -1,3 +1,6 @@
+# This is also a level order traversal but here first add the right child into queue and then left for next level
+# iteration. After that print the first element.
+
 from Node import Node
 
 
