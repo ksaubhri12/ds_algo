@@ -1,58 +1,39 @@
 import math
 
 
-def max_product_sub_arr(arr: [], n):
-    positive_product = 1
-    zero_exist = False
-    positive_exist = False
-    negative_exist = False
+def max_product_sub_array(arr: [], n):
+    if len(arr) == 1:
+        return arr[0]
+    positive_count = 0
+    negative_count = 0
+    zero_count = 0
+    max_negative = float('-inf')
+    prod = 1
     for i in range(0, n):
         if arr[i] > 0:
-            positive_product = positive_product * arr[i]
-            positive_exist = True
-        if arr[i] == 0:
-            zero_exist = True
-
-        if arr[i] < 0:
-            negative_exist = True
-
-    if not positive_exist:
-        positive_product = 0
-
-    negative_element_count = 0
-    negative_max_element = float('-inf')
-    negative_product = 1
-    for i in range(0, n):
-        if arr[i] < 0:
-            negative_element_count = negative_element_count + 1
-            negative_max_element = max(negative_max_element, arr[i])
-            negative_product = negative_product * arr[i]
-
-    answer = None
-
-    if negative_element_count == 1:
-        if positive_exist:
-            answer = positive_product
-        elif zero_exist:
-            answer = 0
+            positive_count = positive_count + 1
+        elif arr[i] == 0:
+            zero_count = zero_count + 1
         else:
-            answer = negative_product
+            max_negative = max(max_negative, arr[i])
+            negative_count = negative_count + 1
+        if arr[i] != 0:
+            prod = prod * arr[i]
 
-    elif negative_element_count % 2 == 0:
-        answer = positive_product * negative_product
+    if zero_count == n:
+        return 0
+    elif negative_count == 1 and zero_count + negative_count == n:
+        return 0
+    elif negative_count % 2 != 0:
+        prod = int(prod / max_negative)
 
-    else:
-        best_from_negative = negative_product // negative_max_element
-        answer = best_from_negative * positive_product
-
-    if answer < 0:
-        pro = -1
-    else:
-        pro = 1
-    return pro * int(abs(answer) % (math.pow(10, 9) + 7))
+    return int((int(prod) % (math.pow(10, 9) + 7)))
 
 
 if __name__ == '__main__':
-    print(max_product_sub_arr([-1, -1, -2, 4, 3], 5))
-    print(max_product_sub_arr([-5, 10, 7, 5, 7, 10], 6))
-    print(max_product_sub_arr([-1], 1))
+    arr_in = [7, -2, 7, -1, 2, -3, -10, -2, -9, 6, -5, -10, 9, 4, -5, 6, 0, 2, -10, -5, -6, 1, -6, 6, -3, 7, 7, -9, -10,
+              -4, -9, 4, 9, 10, 3, -7, -6, 6, 3, 7, -3, -2, -10, -2, 10, -3, -9, 0, 7, -1, -3, 5, -5, -4, -3, 2, 3, 2,
+              -7, -8, 9, 10, 10, 2, 4, 2, -8, 2, -3]
+    print(max_product_sub_array(arr_in, 69))
+    print(max_product_sub_array([-4, 0, 7, 10, -5, -3, -5, 5, 0], 9))
+    print(max_product_sub_array([-1, -1, -2, 4, 3], 5))

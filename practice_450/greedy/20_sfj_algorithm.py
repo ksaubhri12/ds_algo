@@ -3,7 +3,7 @@ class Job:
         self.arr_time = arr_time
         self.burst_time = burst_time
         self.completion_time = arr_time + burst_time
-        self.waiting_time = 0
+        self.waiting_time = arr_time
         self.tat = self.completion_time - self.arr_time
 
 
