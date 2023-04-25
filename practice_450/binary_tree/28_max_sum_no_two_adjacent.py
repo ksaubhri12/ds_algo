@@ -1,3 +1,11 @@
+# This is a DP question
+# For every node there are two possibility either include or exclude it.
+# if you include it then you do the same for next to next nodes
+# if you exclude it then you add only left and right node data
+# take the max out of them and return
+# for not computing the result again and again - create a hash map
+# store the object of node in the hash map as key.
+
 from Node import Node
 
 

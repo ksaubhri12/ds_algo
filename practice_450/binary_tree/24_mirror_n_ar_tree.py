@@ -1,3 +1,9 @@
+# This is n-arr tree.
+# Basically one node can have more than 2 children.
+# In the array edges are given.
+# for one create dict and order in stack
+# for second one look up the key in dict, check the value by popping up the stack
+
 def mirror_n_arr_tree(arr_1: [], arr_2: []):
     n = len(arr_1)
     m = len(arr_2)

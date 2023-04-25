@@ -1,3 +1,5 @@
+# Equivalent to 18_sum_tree.
+# There you were creating , Here you wil check.
 from Node import Node
 
 

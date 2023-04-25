@@ -1,3 +1,7 @@
+# Sum tree is basically where each node has value equal to left sub tree and right sub tree sum.
+# recursively start from leaf node and then go to top.
+#
+
 from Node import Node
 from BinaryTree import BinaryTree
 

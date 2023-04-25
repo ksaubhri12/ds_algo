@@ -1,3 +1,7 @@
+# when you go left and right add level as level +1
+# Then when you go to node for which nothing exist
+# There just go and increase the level.
+
 from Node import Node
 
 

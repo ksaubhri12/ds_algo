@@ -1,3 +1,12 @@
+# Need to create hash value for the node.
+# For every node we need to store that value as well.
+# In the same code we are creating hash value of each node and storing it also
+# How to create hash value - We first add root in the string
+# Then we add left sub tree properly
+# while we go inside left sub tree there also we wil do the same behaviour.
+# for each node this is how we will create hash map and that is how we will know if same value is there for
+# more than 1 key.
+
 from Node import Node
 
 

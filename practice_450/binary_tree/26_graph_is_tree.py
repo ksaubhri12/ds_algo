@@ -1,3 +1,11 @@
+# We need to check two things
+# If the whole graph can be traverse by a single point which is our root - possibility of tree
+# Apart from that if there is no cyclic relation - It is definitely a tree
+# The recursive function take two things.
+# One is node and second one is parent of the node.
+# when we visit a node - mark it as visited,
+# run the same code for all other adjacent neighbour of that node. There if any node you find which is visited and that
+
 from Graph import Graph
 
 

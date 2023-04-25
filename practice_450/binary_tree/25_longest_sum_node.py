@@ -1,3 +1,6 @@
+# We need to compute two things recursively sum of left and right side children
+# Also the height of right side and left side children
+
 from Node import Node
 
 

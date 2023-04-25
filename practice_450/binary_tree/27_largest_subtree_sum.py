@@ -1,3 +1,8 @@
+# Keep the answer in an array to keep the state same for all recursion
+# Now for every left and right compute the same and do it recursively
+# for each check with curr result and replace if needed.
+
+
 from Node import Node
 
 
