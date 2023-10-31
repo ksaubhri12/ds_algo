@@ -1,22 +1,24 @@
-def is_cyclic(graph: [[]], v):
-    visited = [False] * v
-    for i in range(v):
-        if not visited[i]:
-            if dfs_util(i, visited, graph, -1):
-                return True
-    return False
+# Video Link -> https://youtu.be/UPfUFoWjk5w?si=MGbfHEVOcoTF1q6_
 
-
-def dfs_util(vertex: int, visited: [], graph: [[]], parent: int):
+def dfs_util(vertex: int, visited: [], edges: [[]], parent: int):
     visited[vertex] = True
-
-    for neighbour in graph[vertex]:
+    for neighbour in edges[vertex]:
         if not visited[neighbour]:
-            if dfs_util(neighbour, visited, graph, vertex):
+            if dfs_util(neighbour, visited, edges, vertex):
                 return True
         else:
             if neighbour != parent:
                 return True
+
+
+def is_cyclic(edges: [[]], vertex):
+    visited = [False] * vertex
+    for i in range(vertex):
+        if not visited[i]:
+            if dfs_util(i, visited, edges, None):
+                return True
+
+    return False
 
 
 if __name__ == '__main__':

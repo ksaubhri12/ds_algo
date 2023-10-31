@@ -71,14 +71,26 @@ def graph_bfs_edges_min(vertex, edges: [[]]):
     return output_arr
 
 
-if __name__ == '__main__':
-    edges_mat = [
-        [0, 1],
-        [0, 3],
-        [1, 2],
-        [2, 3]
-    ]
+def bfs(vertex, edges: [[]]):
+    queue_data = []
+    visited = [False] * (vertex + 1)
+    queue_data.append(0)
+    traversal_list = []
+    while len(queue_data) > 0:
+        element_popped = queue_data.pop(0)
+        if visited[element_popped]:
+            continue
+        visited[element_popped] = True
+        traversal_list.append(element_popped)
+        neighbours = edges[element_popped]
+        for neighbour in neighbours:
+            queue_data.append(neighbour)
 
+    return traversal_list
+
+
+if __name__ == '__main__':
     edges_data = [[1, 2, 3], [], [4], [], []]
+    print(bfs(4, edges_data))
 
     print(graph_bfs_edges_min(4, edges_data))
