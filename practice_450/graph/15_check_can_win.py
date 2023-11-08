@@ -1,3 +1,6 @@
+# Topological Sort is possible in DAG.
+# if a graph is cyclic topological sort is not possible
+
 def check_can_kill_all_snipers(n, m, edges):
     adj_graph = create_adj_list(n, edges)
     return False if is_cyclic(adj_graph, n) else True

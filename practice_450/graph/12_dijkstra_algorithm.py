@@ -3,31 +3,33 @@ from queue import PriorityQueue
 
 def shortest_distance(v, adj: [[[]]], source_vertex: int):
     data_queue = PriorityQueue()
-    visited_dist_map = {}
-    for i in range(v):
-        visited_dist_map[i] = [False, float('inf')]
-
-    visited_dist_map[source_vertex][1] = 0
-
     data_queue.put((0, source_vertex))
-    while len(data_queue.queue) > 0:
-        vertex_weight_data = data_queue.get()
-        dist = vertex_weight_data[0]
-        vertex = vertex_weight_data[1]
-        if visited_dist_map[vertex][0]:
-            continue
-        visited_dist_map[vertex][0] = True
-        for neighbor_weight in adj[vertex]:
-            neighbor = neighbor_weight[0]
-            weight = neighbor_weight[1]
-            curr_dist = visited_dist_map[neighbor][1]
-            if curr_dist > weight + dist:
-                visited_dist_map[neighbor][1] = weight + dist
-                data_queue.put((weight + dist, neighbor))
-    final_arr = []
-    for value in visited_dist_map.values():
-        final_arr.append(value[1])
-    return final_arr
+    visited_map_dict = {}
+    for i in range(v):
+        visited_map_dict[i] = [False, float('inf')]
+    visited_map_dict[source_vertex][1] = 0
+    while len(data_queue.queue):
+        size = len(data_queue.queue)
+        for i in range(size):
+            vertex_data = data_queue.get()
+            vertex = vertex_data[1]
+            dist = vertex_data[0]
+            if visited_map_dict[vertex][0]:
+                continue
+            visited_map_dict[vertex][0] = True
+            for neighbour in adj[vertex]:
+                neighbour_vertex = neighbour[0]
+                weight = neighbour[1]
+                curr_dist = visited_map_dict[neighbour_vertex][1]
+                if curr_dist > dist + weight:
+                    visited_map_dict[neighbour_vertex][1] = dist + weight
+                    data_queue.put((dist + weight, neighbour_vertex))
+
+    final_result = []
+    for vertex in visited_map_dict:
+        dist = visited_map_dict[vertex][1]
+        final_result.append(dist)
+    return final_result
 
 
 if __name__ == '__main__':

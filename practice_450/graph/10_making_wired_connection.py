@@ -1,3 +1,5 @@
+# Similar to different island problem, we do DFS and the number of times we have to do DFS is
+# the number of different clusters we have. If we have two clusters we need 1 wire.
 def dfs_util(vertex: int, adj: [[]], visited: []):
     if visited[vertex]:
         return

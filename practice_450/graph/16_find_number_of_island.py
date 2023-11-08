@@ -1,3 +1,8 @@
+# This is basically how many times we have
+# to do DFS. if in a single DFS all the nodes are covered then it is
+# only one island.
+
+
 def find_number_of_island(grid: [[]]):
     max_row = len(grid) - 1
     max_col = len(grid[0]) - 1

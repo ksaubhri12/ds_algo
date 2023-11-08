@@ -1,3 +1,6 @@
+# The idea is to do a DFS
+# while doing DFS create a link between parent and current node.
+# Store the info and re iterate over that and create new node information.
 class Node:
     def __init__(self, val=0, neighbors=None):
         self.val = val

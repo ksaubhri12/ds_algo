@@ -7,7 +7,7 @@ def min_time_kill_all_snipers(n, m, edges):
         visited_map[i] = [False, float('-inf')]
 
     while len(get_top_vertex_stack) > 0:
-        top_stack_popped = get_top_vertex_stack.pop(-1)
+        top_stack_popped = get_top_vertex_stack.pop(0)
         if visited_map[top_stack_popped][0]:
             continue
         data_queue = [top_stack_popped]
@@ -26,6 +26,23 @@ def min_time_kill_all_snipers(n, m, edges):
 
     return final_arr
 
+# def min_time_kill_snipers(n,m, edges):
+#     adj_list = create_adj_list(n, edges)
+#     top_sort = get_top_sort(adj_list, n)
+#     visited = [float('-inf')]*n
+#     for i in top_sort:
+#         if visited[i] == float('-inf'):
+#             dfs_util_v2(visited, i, adj_list, 1)
+#
+#     return visited
+#
+#
+# def dfs_util_v2(visited:[], vertex:int, adj:[[]], count:int):
+#     for neighbour in adj[vertex]:
+#         dfs_util_v2(visited, neighbour, adj, count + 1)
+#     visited[vertex] = max(count, visited[vertex])
+
+
 
 def create_adj_list(n, edges) -> [[int]]:
     adj_list = [[] for i in range(n)]
@@ -41,7 +58,7 @@ def get_top_sort(adj_graph: [[]], v):
     for i in range(v):
         if not visited[i]:
             dfs_util(i, visited, data_stack, adj_graph)
-    return data_stack
+    return list(reversed(data_stack))
 
 
 def dfs_util(vertex: int, visited: [], data_stack: [], adj_graph: [[]]):
@@ -56,9 +73,19 @@ def dfs_util(vertex: int, visited: [], data_stack: [], adj_graph: [[]]):
 
 
 if __name__ == '__main__':
+    # print(min_time_kill_snipers(4, 3, [[1, 2], [0, 3], [2, 3]]))
+    # print(min_time_kill_snipers(6, 7, [[1, 2], [1, 0], [0, 2], [0, 4], [5, 4], [5, 3], [3, 4]]))
+    # print(min_time_kill_snipers(4, 5, [[0, 2], [1, 2], [1, 0], [3, 0], [3, 1]]))
+    # print(min_time_kill_snipers(3, 3, [[0, 1], [1, 2], [0, 2]]))
+    # print(min_time_kill_snipers(4, 3, [[1, 2], [0, 3], [2, 3]]))
+    # print(min_time_kill_snipers(3, 2, [[2, 1], [2, 0]]))
+
+    ############
+    print('-------alternate------')
     print(min_time_kill_all_snipers(4, 3, [[1, 2], [0, 3], [2, 3]]))
     print(min_time_kill_all_snipers(6, 7, [[1, 2], [1, 0], [0, 2], [0, 4], [5, 4], [5, 3], [3, 4]]))
     print(min_time_kill_all_snipers(4, 5, [[0, 2], [1, 2], [1, 0], [3, 0], [3, 1]]))
     print(min_time_kill_all_snipers(3, 3, [[0, 1], [1, 2], [0, 2]]))
     print(min_time_kill_all_snipers(4, 3, [[1, 2], [0, 3], [2, 3]]))
     print(min_time_kill_all_snipers(3, 2, [[2, 1], [2, 0]]))
+

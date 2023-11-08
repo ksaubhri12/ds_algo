@@ -1,3 +1,9 @@
+# The idea is to build a relation graph first
+# then do a topological sorting
+# to build a graph take two subsequent words
+# and then when you find the first difference, just add that edge and break it
+# after that it is nothing but a topological sort
+
 def get_order(word_list: [], k):
     adj_graph = get_relation_list(word_list, k)
     visited = [False] * k

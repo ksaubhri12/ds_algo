@@ -1,3 +1,7 @@
+# We have to do DFS and make sure that the starting one
+# is adding in the last in the index since it will be the first one to visit, we just
+# reverse the list
+
 def topological_sorting(v, adj_graph: [[]]):
     data_stack = []
     visited = [False] * v

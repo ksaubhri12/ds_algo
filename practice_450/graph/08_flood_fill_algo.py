@@ -1,3 +1,6 @@
+# The idea is to use DFS to visit each node in the graph and before visiting do some safe check
+# to make sure that the new pixel is traversal able. Mark it with new color and keep check for the new color.
+
 def flood_fill(input_grid, src_row: int, src_col: int, color: int):
     max_row = len(input_grid) - 1
     max_col = len(input_grid[0]) - 1

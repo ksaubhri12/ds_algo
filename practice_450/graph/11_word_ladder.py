@@ -1,3 +1,11 @@
+# It is BFS. The condition is that we have
+# to reach to end with minimum steps. Minimum steps is BFS.
+# One more condition is that the new vertex has to be different by one edge only, so rather than running
+# the loop within the element, we ran a fix loop of 26 characters and created a new word and check if it exists.
+# all those which exists are neighbour of the BFS and that we have visited hence we are removing it from word_set.
+# In BFS we do the visited thing too.
+
+
 def word_ladder(start_word, end_word, word_list):
     if start_word == end_word:
         return 0
