@@ -1,4 +1,4 @@
-from geeksForGeeks.dataStructure.linkedList import LinkedList,Node
+from geeksForGeeks.dataStructure.linkedList import LinkedList, Node
 
 #
 # li = LinkedList()
@@ -36,9 +36,5 @@ li.append(13)
 li.append(20)
 li.append(14)
 
-newHead = LinkedList.swapNodes(li.head,12,20)
+newHead = LinkedList.swapNodes(li.head, 12, 20)
 LinkedList.printLinkedList(newHead)
-
-
-
-

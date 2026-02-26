@@ -60,11 +60,6 @@ if __name__ == '__main__':
     ll = LinkedList(head)
     ll.print_linked_list()
 
-
-
-
-
-
     head = Node(1)
     head.next = Node(3)
     next_node = Node(3)

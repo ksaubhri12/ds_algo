@@ -32,6 +32,7 @@ def printInorder(root):
         print(root.data)
         printInorder(root.right)
 
+
 h
 root = Node(5)
 root.left = Node(2)

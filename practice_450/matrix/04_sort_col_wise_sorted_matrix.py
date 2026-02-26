@@ -12,6 +12,5 @@ def sort_col_wise_sorted_matrix(N, Mat):
     return Mat
 
 
-
 if __name__ == '__main__':
     print(sort_col_wise_sorted_matrix())

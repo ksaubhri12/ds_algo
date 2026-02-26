@@ -34,4 +34,3 @@ if __name__ == '__main__':
     print('Mirroring Binary Tree')
     new_root = mirror_tree(node_1)
     BinaryTree(new_root).in_order_traversal()
-

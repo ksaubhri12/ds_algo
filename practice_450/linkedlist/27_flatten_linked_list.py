@@ -115,4 +115,3 @@ if __name__ == '__main__':
 
     new_node = flatten_linked_list(node_1)
     SpecialLinkedList(new_node).print_sll()
-

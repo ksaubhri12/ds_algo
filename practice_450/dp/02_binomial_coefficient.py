@@ -23,4 +23,4 @@ if __name__ == '__main__':
     # print(binomial_coefficient(2, 4))
     # print(binomial_coefficient(5, 2))
     print(binomial_coefficient(6, 3))
-    print(binomial_coefficient(69,43))
+    print(binomial_coefficient(69, 43))

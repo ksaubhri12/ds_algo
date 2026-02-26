@@ -60,4 +60,3 @@ if __name__ == '__main__':
     node_1 = deletion_of_node(node_1, 3)
 
     BinaryTree(node_1).in_order_traversal()
-

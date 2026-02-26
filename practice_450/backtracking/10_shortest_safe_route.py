@@ -31,7 +31,6 @@ def path_helper(grid: [[]], row: int, col: int, row_max: int, col_max: int, path
 
 
 def is_safe(grid: [[]], row: int, col: int, row_max, col_max, visited: [[]]):
-
     if row < 0 or row > row_max:
         return False
     if col < 0 or col > col_max:

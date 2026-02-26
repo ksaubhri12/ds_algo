@@ -45,4 +45,3 @@ if __name__ == '__main__':
     print(print_all_possible_paths(2, 2))
     print(print_all_possible_paths(1, 1))
     print(print_all_possible_paths(1, 2))
-

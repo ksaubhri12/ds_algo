@@ -60,10 +60,7 @@ if __name__ == '__main__':
     node_6.next = node_7
     node_6.prev = node_5
 
-
     node_7.prev = node_6
-
-
 
     print('Current Linked List')
     LinkedList(node_1).print_linked_list()

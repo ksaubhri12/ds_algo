@@ -20,6 +20,7 @@ def rotate_linked_list_by_n(start: Node, end: Node, k: int):
     new_head.prev = None
     return rotate_linked_list_by_n(new_head, start, k - 1)
 
+
 if __name__ == '__main__':
     node_1 = Node(6)
     node_2 = Node(5)

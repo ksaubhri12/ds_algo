@@ -18,6 +18,6 @@ def interpolationSearch(arr, x):
     return -1
 
 
-arr = [10, 12, 13, 16, 18, 19, 20, 21,22, 23, 24, 33, 35, 42, 47]
+arr = [10, 12, 13, 16, 18, 19, 20, 21, 22, 23, 24, 33, 35, 42, 47]
 
-print(interpolationSearch(arr,33))
+print(interpolationSearch(arr, 33))

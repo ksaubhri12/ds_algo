@@ -1,6 +1,7 @@
 from Node import Node
 from LinkedList import LinkedList
 
+
 def remove_duplicate(head: Node):
     curr = head
     prev = None

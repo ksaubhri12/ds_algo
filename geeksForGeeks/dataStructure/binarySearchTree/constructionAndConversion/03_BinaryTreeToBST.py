@@ -35,10 +35,11 @@ def inOrderTraversalUtil(root, arr, i):
         i[0] += 1
         inOrderTraversalUtil(root.right, arr, i)
 
+
 root = Node(10)
 root.left = Node(30)
 root.right = Node(15)
 root.left.left = Node(20)
-root.right.right= Node(5)
+root.right.right = Node(5)
 convertFromBinaryTreeToBST(root)
 printInorder(root)

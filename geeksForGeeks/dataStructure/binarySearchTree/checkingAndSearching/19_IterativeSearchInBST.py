@@ -27,6 +27,7 @@ def iterativeSearch(root, key):
             continue
     return root
 
+
 root = None
 root = insert(root, 50)
 insert(root, 30)
@@ -36,4 +37,4 @@ insert(root, 70)
 insert(root, 60)
 insert(root, 80)
 
-print(iterativeSearch(root,20))
+print(iterativeSearch(root, 20))

@@ -81,4 +81,3 @@ if __name__ == '__main__':
     node_3.left = node_4
     node_3.right = node_5
     print(check_binary_tree_heap(node_1))
-

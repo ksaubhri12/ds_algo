@@ -69,38 +69,39 @@ class Conversion:
                 self.push(finalString)
         print(self.pop())
 
-    def prefixToPostFIx(self,expr):
+    def prefixToPostFIx(self, expr):
         for i in reversed(expr):
             if self.isOperand(i):
                 self.push(i)
             else:
                 firstOperand = self.pop()
                 secondOperand = self.pop()
-                finalString = firstOperand+secondOperand+i
+                finalString = firstOperand + secondOperand + i
                 self.push(finalString)
         print(self.pop())
 
-    def postfixToPreFix(self,expr):
+    def postfixToPreFix(self, expr):
         for i in expr:
             if self.isOperand(i):
                 self.push(i)
             else:
                 firstOperand = self.pop()
                 secondOperand = self.pop()
-                finalString = i+secondOperand+firstOperand
+                finalString = i + secondOperand + firstOperand
                 self.push(finalString)
         print(self.pop())
 
-    def postfixToInfix(self,expr):
+    def postfixToInfix(self, expr):
         for i in expr:
             if self.isOperand(i):
                 self.push(i)
             else:
                 firstOperand = self.pop()
                 secondOperand = self.pop()
-                finalString = "("+secondOperand+i+firstOperand+")"
+                finalString = "(" + secondOperand + i + firstOperand + ")"
                 self.push(finalString)
         print(self.pop())
+
 
 expr = "(d+c)*b+a"
 conv = Conversion(len(expr))

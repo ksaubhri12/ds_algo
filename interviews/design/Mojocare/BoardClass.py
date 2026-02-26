@@ -1,7 +1,6 @@
 # Design ChessBoard
 
 
-
 #
 #
 #

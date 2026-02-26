@@ -1,6 +1,7 @@
 from Node import Node
 from LinkedList import LinkedList
 
+
 def partition(arr: [], start: int, end: int):
     pivot = arr[end]
     i = start - 1
@@ -99,4 +100,3 @@ if __name__ == '__main__':
     quick_sort_linked_list(node_1)
     ll_1 = LinkedList(node_1)
     ll_1.print_linked_list()
-

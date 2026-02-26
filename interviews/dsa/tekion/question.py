@@ -10,11 +10,10 @@
 #           aabcdzabcdfg
 #           a$
 #           a$bcdz$fg
-        #   aabcdzaabcdzfg
+#   aabcdzaabcdzfg
 #           a bcd a abcdfg
 #
 #           a$bcdaabcdfg -> replace
-
 
 
 # Given two BST you have to find out the nodes that exist only in one of the  two trees in terms of values
@@ -37,12 +36,3 @@ class BST:
 
 def get_non_common_element_in_bst(bst1: BST, bst2: BST):
     return
-
-
-
-
-
-
-
-
-

@@ -40,6 +40,7 @@ def get_factorial(number, dp: []):
     dp[number] = number * get_factorial(number - 1, dp)
     return dp[number]
 
+
 if __name__ == '__main__':
     # print(get_factorial())
     print(smallest_factorial(1))
@@ -50,4 +51,3 @@ if __name__ == '__main__':
     print(smallest_factorial(6))
     print(smallest_factorial(7))
     print(smallest_factorial(23))
-

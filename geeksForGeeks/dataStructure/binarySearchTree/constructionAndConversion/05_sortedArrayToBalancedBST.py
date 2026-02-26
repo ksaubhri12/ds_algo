@@ -18,7 +18,7 @@ def createBalanceBSTFromSortedArray(arr):
     mid = int(mid)
     root = Node(arr[mid])
     root.left = createBalanceBSTFromSortedArray(arr[:mid])
-    root.right = createBalanceBSTFromSortedArray(arr[mid+1:])
+    root.right = createBalanceBSTFromSortedArray(arr[mid + 1:])
     return root
 
 

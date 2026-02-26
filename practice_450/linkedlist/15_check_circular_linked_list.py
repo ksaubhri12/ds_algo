@@ -15,6 +15,7 @@ def check_circular_linked_list(head: Node):
 
     return answer
 
+
 if __name__ == '__main__':
     node_1 = Node(3)
     node_2 = Node(6)

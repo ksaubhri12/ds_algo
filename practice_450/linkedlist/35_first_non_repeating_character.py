@@ -24,9 +24,7 @@ def first_non_repeating_character(stream: str):
 
     return answer
 
+
 if __name__ == '__main__':
     print(first_non_repeating_character('aabc'))
     print(first_non_repeating_character('aacb'))
-
-
-

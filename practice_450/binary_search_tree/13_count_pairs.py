@@ -10,7 +10,6 @@ def count_pairs(root_1: Node, root_2: Node, sum_value):
     for key in dict_map_1:
         need = sum_value - key
         if need in dict_map_2:
-            
             count = count + 1
 
     return count

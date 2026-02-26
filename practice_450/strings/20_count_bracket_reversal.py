@@ -36,4 +36,3 @@ if __name__ == '__main__':
     print(count_brackets_reversal('}{{}}{{{'))
     print(count_brackets_reversal('{{}{{{}{{}}{{'))
     print(count_brackets_reversal('}{}{}{}}}{{{{{}{}{}}{{}{}{}}{{}}{{'))
-

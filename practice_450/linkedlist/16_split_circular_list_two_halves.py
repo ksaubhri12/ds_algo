@@ -59,4 +59,3 @@ if __name__ == '__main__':
     anode_3.next = anode_1
     head_1, head_2 = (split_circular_list_two_halves(anode_1, None, None))
     print(head_1.data, head_2.data)
-

@@ -88,4 +88,3 @@ if __name__ == '__main__':
     print(get_arithmetic_evaluation('((2+3)*(5/2))'))
     print(get_arithmetic_evaluation('(3*(5+2)*(10-7))'))
     print(get_arithmetic_evaluation('(121+(101+0))'))
-

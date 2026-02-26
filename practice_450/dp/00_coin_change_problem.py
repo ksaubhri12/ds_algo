@@ -8,12 +8,11 @@ def min_coins(amount, coins, ret_map):
     return ""
 
 
-
-
 def min_coins_util(amount, coins):
     ret_map = {}
     min_coins(amount, coins, ret_map)
     return ret_map
+
 
 if __name__ == '__main__':
     print(min_coins_util(4, [1, 2, 3]))

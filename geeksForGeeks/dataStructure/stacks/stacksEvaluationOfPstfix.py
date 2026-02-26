@@ -20,5 +20,6 @@ def postfixEvaluation(expr):
             numberStack.append(finalNumber)
     print(numberStack.pop())
 
+
 expr = "100 200 + 2 / 5 * 7 +"
 postfixEvaluation(expr)

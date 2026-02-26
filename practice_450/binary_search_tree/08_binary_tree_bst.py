@@ -1,5 +1,5 @@
 from Node import Node
-from practice_450.binary_tree.BinaryTree import  BinaryTree
+from practice_450.binary_tree.BinaryTree import BinaryTree
 
 
 def binary_tree_bst(root: Node):
@@ -47,4 +47,3 @@ if __name__ == '__main__':
     print('Convert BST')
     binary_tree_bst(node_1)
     BinaryTree(node_1).in_order_traversal()
-

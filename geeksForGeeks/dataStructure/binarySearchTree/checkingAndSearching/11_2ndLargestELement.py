@@ -25,6 +25,7 @@ def insert(node, key):
         node.right = insert(node.right, key)
     return node
 
+
 def kthLargest(root):
     i = [0]
-    kthLargestNode(root,2,i)
+    kthLargestNode(root, 2, i)

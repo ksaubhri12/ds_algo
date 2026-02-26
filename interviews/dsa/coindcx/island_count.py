@@ -20,7 +20,5 @@ def do_dfs_mark_visited(arr: [[]], i, j, visited: []):
         return
 
 
-
-
 def is_visited(visited_arr: [], i, j):
     return visited_arr[i + j] == 1

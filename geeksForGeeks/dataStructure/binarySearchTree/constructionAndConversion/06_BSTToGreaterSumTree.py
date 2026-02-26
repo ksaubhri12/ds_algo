@@ -36,7 +36,6 @@ def printInorder(root):
         printInorder(root.right)
 
 
-
 root = Node(11)
 root.left = Node(2)
 root.right = Node(29)

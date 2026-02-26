@@ -4,7 +4,7 @@ class Node:
         self.right = None
         self.left = None
 
-    def constructSpecialTreeFromInorder(self,arr):
+    def constructSpecialTreeFromInorder(self, arr):
         if len(arr) == 1:
             return Node(arr[0])
         if len(arr) == 0:
@@ -12,10 +12,9 @@ class Node:
         maxValue, maxIndex = Node.maxValueAndIndexInArr(arr)
         temp = Node(maxValue)
         temp.left = self.constructSpecialTreeFromInorder(arr[:maxIndex])
-        temp.right = self.constructSpecialTreeFromInorder(arr[maxIndex+1:])
+        temp.right = self.constructSpecialTreeFromInorder(arr[maxIndex + 1:])
 
         return temp
-
 
     def printInorder(self, root):
         if root:
@@ -30,10 +29,11 @@ class Node:
             maxIndex = 0
 
             for i in range(len(arr)):
-                if arr[i]>maxValue:
+                if arr[i] > maxValue:
                     maxValue = arr[i]
                     maxIndex = i
-            return maxValue,maxIndex
+            return maxValue, maxIndex
+
 
 arr = [5, 10, 40, 30, 28]
 node = Node()

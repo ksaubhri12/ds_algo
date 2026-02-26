@@ -11,4 +11,4 @@ def exponentialSearch(arr, x):
     return binarySearch.binarySearch(arr, i / 2, min(i, n), x)
 
 
-print(exponentialSearch([2, 3, 4, 10, 40],3))
+print(exponentialSearch([2, 3, 4, 10, 40], 3))

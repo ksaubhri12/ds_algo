@@ -34,9 +34,6 @@ def chose_and_swap(input_string: str):
     return ''.join(input_string_list)
 
 
-
-
-
 if __name__ == '__main__':
     print(chose_and_swap('ccad'))
     print(chose_and_swap('abba'))

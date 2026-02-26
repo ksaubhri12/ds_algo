@@ -1,17 +1,17 @@
 class ListNode:
 
-    def __init__(self,data):
+    def __init__(self, data):
         self.data = data
         self.next = None
 
 
-
 class BinaryTreeNode:
 
-    def __init__(self,data):
+    def __init__(self, data):
         self.data = data
         self.left = None
         self.right = None
+
 
 class Conversion:
 
@@ -19,7 +19,7 @@ class Conversion:
         self.head = None
         self.root = None
 
-    def push(self,newData):
+    def push(self, newData):
         newNode = ListNode(newData)
         newNode.next = self.head
 
@@ -29,7 +29,7 @@ class Conversion:
 
         q = []
         if self.head is None:
-            return  None
+            return None
 
         self.root = BinaryTreeNode(self.head.data)
         q.append(self.root)
@@ -45,7 +45,7 @@ class Conversion:
             leftChild = BinaryTreeNode(self.head.data)
             self.head = self.head.next
             q.append(leftChild)
-            if self.head :
+            if self.head:
                 rightChild = BinaryTreeNode(self.head.data)
                 self.head = self.head.next
                 q.append(rightChild)
@@ -53,7 +53,7 @@ class Conversion:
             parent.left = leftChild
             parent.right = rightChild
 
-    def inOrderPrint(self,root):
+    def inOrderPrint(self, root):
         if root:
             self.inOrderPrint(root.left)
             print(root.data)
@@ -82,7 +82,6 @@ class Conversion:
             parent.right = rightChild
 
 
-
 conv = Conversion()
 conv.push(36)
 conv.push(30)
@@ -94,7 +93,5 @@ conv.push(10)
 conv.convertListToBinaryTree()
 
 conv.inOrderPrint(conv.root)
-conv.convertArrayToBinaryList([1,2,3,4,5,6])
+conv.convertArrayToBinaryList([1, 2, 3, 4, 5, 6])
 conv.inOrderPrint(conv.root)
-
-

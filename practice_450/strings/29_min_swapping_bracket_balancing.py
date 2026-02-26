@@ -19,7 +19,7 @@ def min_swap_bracket_balance(input_value: str):
                 opening_bracket_index = opening_brackets_index_queue.pop(0)
                 answer = answer + opening_bracket_index - i
                 input_string[i], input_string[opening_bracket_index] = input_string[opening_bracket_index], \
-                                                                       input_string[i]
+                    input_string[i]
                 count = 1
 
     return answer

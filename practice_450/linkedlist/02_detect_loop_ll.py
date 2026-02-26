@@ -29,5 +29,3 @@ if __name__ == '__main__':
     next_node.next.next.next = Node(6)
     next_node.next.next.next.next = loop_node
     print(detect_loop(head))
-
-

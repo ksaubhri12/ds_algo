@@ -64,7 +64,6 @@ if __name__ == '__main__':
     mnode_1.next = mnode_2
     mnode_2.next = mnode_3
 
-
     new_head = intersection_linked_list(node_1, mnode_1)
     ll = LinkedList(new_head)
     ll.print_linked_list()

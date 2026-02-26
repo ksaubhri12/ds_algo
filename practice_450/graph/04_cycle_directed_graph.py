@@ -41,7 +41,7 @@ def get_adj_list(edges: [[]], vertex: int):
 
 
 if __name__ == '__main__':
-    edges = [[7, 0],[0, 4],[4, 5],[5, 6],[6, 8],[8, 9],[9, 3],[3, 2],[2, 1],[1, 10],[4, 6]]
+    edges = [[7, 0], [0, 4], [4, 5], [5, 6], [6, 8], [8, 9], [9, 3], [3, 2], [2, 1], [1, 10], [4, 6]]
     adj_list = get_adj_list(edges, 11)
     # edge_list = [[1], [2], [3], [3]]
     # print(is_cyclic_directed_graph(4, edge_list))

@@ -33,6 +33,7 @@ def inorder_successor_util(root: Node, result_arr: []):
     result_arr.append(root)
     inorder_successor_util(root.right, result_arr)
 
+
 if __name__ == '__main__':
     node_1 = Node(10)
     node_2 = Node(8)

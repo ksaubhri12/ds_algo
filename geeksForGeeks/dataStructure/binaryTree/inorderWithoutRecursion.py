@@ -91,11 +91,11 @@ class Node:
             item = queue.pop()
             print(item.data)
             if item.left:
-                queue.insert(0,item.left)
+                queue.insert(0, item.left)
             if item.right:
-                queue.insert(0,item.right)
+                queue.insert(0, item.right)
 
-    def printLeafNodes(self,root):
+    def printLeafNodes(self, root):
         if root is None:
             return
         if root.left is None and root.right is None:
@@ -134,12 +134,11 @@ def search(arr, start, end, value):
             return i
 
 
-inOrder = ['D', 'B' ,'E', 'A', 'F', 'C']
+inOrder = ['D', 'B', 'E', 'A', 'F', 'C']
 preOrder = ['A', 'B', 'D', 'E', 'C', 'F']
 
 buildTree.preIndex = 0
-root = buildTree(preOrder,inOrder,0,len(inOrder)-1)
-
+root = buildTree(preOrder, inOrder, 0, len(inOrder) - 1)
 
 # root = Node(1)
 # root.left = Node(2)

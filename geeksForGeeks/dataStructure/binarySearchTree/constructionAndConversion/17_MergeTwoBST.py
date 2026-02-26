@@ -8,12 +8,11 @@ class Node:
 def mergeTwoBST(root1, root2):
     arr1 = []
     arr2 = []
-    inOrderTraversalUtil(root1,arr1)
-    inOrderTraversalUtil(root2,arr2)
-    arr3 = merge(arr1,arr2)
+    inOrderTraversalUtil(root1, arr1)
+    inOrderTraversalUtil(root2, arr2)
+    arr3 = merge(arr1, arr2)
     root = createBalanceBSTFromSortedArray(arr3)
     return root
-
 
 
 def merge(leftArray, rightArray):
@@ -44,17 +43,20 @@ def merge(leftArray, rightArray):
             finalArrayIndex += 1
         return finalArray
 
+
 def printInOrder(root):
     if root:
         printInOrder(root.left)
         print(root.data)
         printInOrder(root.right)
 
+
 def inOrderTraversalUtil(root, arr):
     if root:
         inOrderTraversalUtil(root.left, arr)
         arr.append(root.data)
         inOrderTraversalUtil(root.right, arr)
+
 
 def createBalanceBSTFromSortedArray(arr):
     if len(arr) == 0:
@@ -68,6 +70,5 @@ def createBalanceBSTFromSortedArray(arr):
     mid = int(mid)
     root = Node(arr[mid])
     root.left = createBalanceBSTFromSortedArray(arr[:mid])
-    root.right = createBalanceBSTFromSortedArray(arr[mid+1:])
+    root.right = createBalanceBSTFromSortedArray(arr[mid + 1:])
     return root
-

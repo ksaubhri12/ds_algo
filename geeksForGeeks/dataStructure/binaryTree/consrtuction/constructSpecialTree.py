@@ -34,5 +34,5 @@ pre = [10, 30, 20, 5, 15]
 preLN = ['N', 'N', 'L', 'L', 'L']
 
 node = Node()
-root  = node.constructBinaryTree(pre,preLN)
+root = node.constructBinaryTree(pre, preLN)
 node.printInorder(root)

@@ -28,4 +28,3 @@ if __name__ == '__main__':
     print(redundant_brackets('((a+b)*(c+d))'))
     print(redundant_brackets('(a+b)'))
     print(redundant_brackets('((a+b))'))
-

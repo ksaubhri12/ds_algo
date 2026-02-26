@@ -24,14 +24,13 @@ def longest_common_prefix(arr: []):
 
 
 def find_word_in_string_with_prefix_condition(word, input_string):
-
     m = len(word)
     sub_string = input_string[0:m]
     return word == sub_string
 
 
 if __name__ == '__main__':
-    print(longest_common_prefix(["reflower","flow","flight"]))
+    print(longest_common_prefix(["reflower", "flow", "flight"]))
     print(longest_common_prefix(["flower", "flow", "flight"]))
     print(longest_common_prefix(["dog", "racecar", "car"]))
     print(longest_common_prefix(["a"]))

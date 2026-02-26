@@ -24,7 +24,6 @@ def add_two_numbers(head_1: Node, head_2: Node):
     return new_head
 
 
-
 def get_number_from_linked_list(head: Node):
     final_string = ''
     curr = head

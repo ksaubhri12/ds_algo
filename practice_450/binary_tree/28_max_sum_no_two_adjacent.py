@@ -36,7 +36,6 @@ def max_sum_util(root: Node, ans: {}):
     return res
 
 
-
 if __name__ == '__main__':
     node_1 = Node(4)
     node_2 = Node(2)
@@ -59,7 +58,6 @@ if __name__ == '__main__':
     node_8 = Node(6)
     node_5.left = node_8
     print(max_sum_no_two_adjacent(node_1))
-
 
     node_1 = Node(1)
     node_2 = Node(2)

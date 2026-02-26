@@ -10,7 +10,7 @@ def constructMinHeapFromBST(root):
     arr = []
     inOrderTraversalUtil(root, arr)
     i = [0]
-    preOrderTraversalUtil(root,arr,i)
+    preOrderTraversalUtil(root, arr, i)
 
 
 def inOrderTraversalUtil(root, arr):

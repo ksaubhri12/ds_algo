@@ -24,7 +24,6 @@ def check_if_isomorphic(str_1: str, str_2: str):
     return answer
 
 
-
 if __name__ == '__main__':
     print(check_if_isomorphic('aab', 'xqu'))
     print(check_if_isomorphic('aab', 'xxy'))

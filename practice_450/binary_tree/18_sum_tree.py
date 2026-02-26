@@ -74,8 +74,6 @@ if __name__ == '__main__':
     new_node = sum_tree(node_1)
     BinaryTree(new_node).in_order_traversal()
 
-
-
     anode_1 = Node(9)
     anode_2 = Node(6)
     anode_3 = Node(4)

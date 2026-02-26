@@ -19,5 +19,6 @@ def flip_string_start_with_word(input_string: str, word):
 
     return flip
 
+
 if __name__ == '__main__':
     print(min_flips('001'))

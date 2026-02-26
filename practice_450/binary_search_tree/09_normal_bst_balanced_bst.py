@@ -26,7 +26,7 @@ def create_bst_from_in_order(in_order_arr: []):
     middle = start + (end - start) // 2
     root = Node(in_order_arr[middle])
     root.left = create_bst_from_in_order(in_order_arr[start:middle])
-    root.right = create_bst_from_in_order(in_order_arr[middle+1:])
+    root.right = create_bst_from_in_order(in_order_arr[middle + 1:])
     return root
 
 
@@ -46,4 +46,3 @@ if __name__ == '__main__':
     new_root_node = normal_bst_balance_bst(node_1)
     BinaryTree(new_root_node).in_order_traversal()
     BinaryTree(new_root_node).post_order()
-

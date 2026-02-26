@@ -11,7 +11,7 @@ def product_array_puzzle(arr: [], n):
 
     final_arr = []
     if zero_count > 1:
-        final_arr = [0]*n
+        final_arr = [0] * n
         return final_arr
 
     for i in range(0, n):
@@ -31,5 +31,5 @@ if __name__ == '__main__':
     print(product_array_puzzle([10, 3, 5, 6, 2], 5))
     print(product_array_puzzle([12, 0], 2))
     arr = [258037519535308800, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 258037519535308800, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-           0, 0, 0 ]
+           0, 0, 0]
     print(product_array_puzzle(arr, 28))

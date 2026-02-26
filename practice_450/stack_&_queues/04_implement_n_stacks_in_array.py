@@ -35,4 +35,3 @@ class SpecialStacks:
         self.free = top_of_stack
 
         return self.data_arr[top_of_stack]
-

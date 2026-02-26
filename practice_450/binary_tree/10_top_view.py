@@ -44,7 +44,6 @@ if __name__ == '__main__':
 
     print(top_view(node_1))
 
-
     anode_1 = Node(1)
     anode_2 = Node(2)
     anode_3 = Node(3)

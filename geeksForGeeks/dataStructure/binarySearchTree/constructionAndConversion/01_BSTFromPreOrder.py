@@ -51,7 +51,7 @@ def constructTree(pre):
     size = len(pre)
     constructTreeUtil.preIndex = 0
     key = pre[0]
-    return constructTreeUtil(pre,key,INT_MIN,INT_MAX,size)
+    return constructTreeUtil(pre, key, INT_MIN, INT_MAX, size)
 
 
 def constructTreeUtil(pre, key, min, max, size):
@@ -62,11 +62,10 @@ def constructTreeUtil(pre, key, min, max, size):
         root = BSTNode(key)
         incrementPreIndex()
         if getPreIndex() < size:
-            root.left = constructTreeUtil(pre,pre[getPreIndex()],min,key,size)
-            root.right = constructTreeUtil(pre,pre[getPreIndex()],key,max,size)
+            root.left = constructTreeUtil(pre, pre[getPreIndex()], min, key, size)
+            root.right = constructTreeUtil(pre, pre[getPreIndex()], key, max, size)
 
     return root
-
 
 
 root = constructTree([10, 5, 1, 7, 40, 50])

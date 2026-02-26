@@ -36,4 +36,3 @@ class CircularQueue:
         curr_head = self.head
         self.head = curr_head.next
         return curr_head.data
-

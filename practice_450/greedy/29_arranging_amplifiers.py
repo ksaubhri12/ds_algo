@@ -12,7 +12,7 @@ def arranging_amplifiers(arr: [], n):
             c = c + 1
             arr[i] = 1
         arr[c] = 2
-        arr[c+1] = 3
+        arr[c + 1] = 3
 
         return arr
 

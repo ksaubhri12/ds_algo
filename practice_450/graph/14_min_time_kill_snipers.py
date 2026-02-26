@@ -26,6 +26,7 @@ def min_time_kill_all_snipers(n, m, edges):
 
     return final_arr
 
+
 # def min_time_kill_snipers(n,m, edges):
 #     adj_list = create_adj_list(n, edges)
 #     top_sort = get_top_sort(adj_list, n)
@@ -41,7 +42,6 @@ def min_time_kill_all_snipers(n, m, edges):
 #     for neighbour in adj[vertex]:
 #         dfs_util_v2(visited, neighbour, adj, count + 1)
 #     visited[vertex] = max(count, visited[vertex])
-
 
 
 def create_adj_list(n, edges) -> [[int]]:
@@ -88,4 +88,3 @@ if __name__ == '__main__':
     print(min_time_kill_all_snipers(3, 3, [[0, 1], [1, 2], [0, 2]]))
     print(min_time_kill_all_snipers(4, 3, [[1, 2], [0, 3], [2, 3]]))
     print(min_time_kill_all_snipers(3, 2, [[2, 1], [2, 0]]))
-

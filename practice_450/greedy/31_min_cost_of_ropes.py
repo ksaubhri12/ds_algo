@@ -21,4 +21,3 @@ def min_cost_rope(rope_arr: []):
 if __name__ == '__main__':
     print(min_cost_rope([4, 2, 7, 6, 9]))
     print(min_cost_rope([4, 3, 2, 6]))
-

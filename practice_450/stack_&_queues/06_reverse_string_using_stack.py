@@ -1,6 +1,3 @@
-
-
-
 def reverse_string(input_string):
     input_stack = []
     for char in input_string:
