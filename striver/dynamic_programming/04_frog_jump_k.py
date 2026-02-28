@@ -1,3 +1,9 @@
+"""
+Similar problem to [03_frog_jump] but now
+the frog can do a jump for 3 steps
+"""
+
+
 def frog_jump_mem(height_arr, k):
     n = len(height_arr)
     dp_arr = [-1] * n
