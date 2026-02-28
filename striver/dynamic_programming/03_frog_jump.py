@@ -88,5 +88,4 @@ if __name__ == '__main__':
     print(min_jump_tab([30, 10, 60, 10]))
     print(min_jump_tab([30, 10, 60, 10, 60, 50]))
     print(min_jump_tab_space_optimised([30, 10, 60, 10, 60, 50]))
-    print(min_jump_tab_space_optimised([10,30, 40, 20, 50]))
-
+    print(min_jump_tab_space_optimised([10, 30, 40, 20, 50]))
