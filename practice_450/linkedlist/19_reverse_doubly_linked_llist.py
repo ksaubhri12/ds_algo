@@ -1,5 +1,5 @@
-from Node import Node
 from LinkedList import LinkedList
+from Node import Node
 
 
 def reverse_doubly_linked_list(head: Node):

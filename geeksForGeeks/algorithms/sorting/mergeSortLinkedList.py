@@ -1,4 +1,4 @@
-from geeksForGeeks.dataStructure.linkedList import LinkedList, Node
+from geeksForGeeks.dataStructure.linkedList import LinkedList
 
 #
 # li = LinkedList()

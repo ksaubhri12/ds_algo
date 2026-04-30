@@ -1,7 +1,5 @@
-import math
-
-from Node import Node
 from LinkedList import LinkedList
+from Node import Node
 
 
 def add_1_linked_list(head: Node):

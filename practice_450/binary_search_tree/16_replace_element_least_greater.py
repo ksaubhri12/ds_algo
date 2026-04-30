@@ -1,5 +1,6 @@
-from Node import Node
 from typing import List
+
+from Node import Node
 
 
 class Solution:

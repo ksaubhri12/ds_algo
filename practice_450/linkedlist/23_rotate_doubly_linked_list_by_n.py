@@ -1,5 +1,5 @@
-from Node import Node
 from LinkedList import LinkedList
+from Node import Node
 
 
 def rotate_doubly_linked_list_by_n(head: Node, k: int):

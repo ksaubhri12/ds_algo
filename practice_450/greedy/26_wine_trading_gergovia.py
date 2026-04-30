@@ -1,6 +1,3 @@
-from queue import PriorityQueue
-
-
 def min_trading_cost(wines: [], n: int):
     buyer_wine_stats = []
     seller_wine_stats = []

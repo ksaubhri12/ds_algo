@@ -1,5 +1,5 @@
-from Node import Node
 from LinkedList import LinkedList
+from Node import Node
 
 
 def intersection_linked_list(head_1: Node, head_2: Node):

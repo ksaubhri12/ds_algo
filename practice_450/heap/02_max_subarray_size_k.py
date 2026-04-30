@@ -1,6 +1,5 @@
-from queue import PriorityQueue
 import heapq
-from heapq import nsmallest
+from queue import PriorityQueue
 
 
 def get_k_max(input_arr: [], n: int, k: int):

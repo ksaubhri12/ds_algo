@@ -1,5 +1,5 @@
-from Node import Node
 from LinkedList import LinkedList
+from Node import Node
 
 
 def delete_nodes_greater_val_right_side(head: Node):

@@ -1,5 +1,5 @@
-from Node import Node
 from LinkedList import LinkedList
+from Node import Node
 
 
 def deletion_node(head: Node, key):

@@ -1,7 +1,7 @@
 # You basically swap the value of root left and right child. And then call the mirror function for the remaining left
 # and right sub tree.
-from Node import Node
 from BinaryTree import BinaryTree
+from Node import Node
 
 
 def mirror_tree(root: Node):

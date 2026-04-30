@@ -2,8 +2,8 @@
 # recursively start from leaf node and then go to top.
 #
 
-from Node import Node
 from BinaryTree import BinaryTree
+from Node import Node
 
 
 def sum_tree(root: Node):

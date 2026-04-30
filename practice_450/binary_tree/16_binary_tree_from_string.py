@@ -1,5 +1,5 @@
-from Node import Node
 from BinaryTree import BinaryTree
+from Node import Node
 
 
 def construct_binary_tree_from_string(string_value: str):

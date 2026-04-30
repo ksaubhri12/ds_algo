@@ -5,8 +5,9 @@
 # The queue for level -> We will add the right element first and then the left element
 # we will pop only one element from queue and append in front of answer deque using append_left function.
 
-from Node import Node
 from collections import deque
+
+from Node import Node
 
 
 def reverse_level_order_traversal(root: Node):

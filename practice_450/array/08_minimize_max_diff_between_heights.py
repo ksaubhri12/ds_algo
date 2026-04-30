@@ -1,6 +1,3 @@
-from functools import cmp_to_key
-
-
 class TowerData:
     def __init__(self):
         self.value = None

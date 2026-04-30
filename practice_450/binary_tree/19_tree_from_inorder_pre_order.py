@@ -1,5 +1,5 @@
-from Node import Node
 from BinaryTree import BinaryTree
+from Node import Node
 
 
 def tree_from_in_order_pre_order(in_order: [], pre_order: []):
