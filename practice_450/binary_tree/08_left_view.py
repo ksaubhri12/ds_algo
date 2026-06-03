@@ -1,5 +1,7 @@
-# Here basically do a level order traversal and at each level, print the first element in the result stack.
-
+# Here basically do a level order traversal and at each level, print the first element in the result stack. The trick
+# is that what are we appending in the answer, in the answer we are only appending the front element of that level
+# after doing that, we are popping all the element of that level and adding all the element of the next level then in
+# the next level, we are again doing the same thing
 from Node import Node
 
 

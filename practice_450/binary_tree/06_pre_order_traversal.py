@@ -1,3 +1,5 @@
+# pre order - root, left, right
+
 from Node import Node
 
 
