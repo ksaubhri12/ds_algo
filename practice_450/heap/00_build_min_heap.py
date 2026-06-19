@@ -1,6 +1,9 @@
+# A min heap has one rule,
+# every parent must be <= both the children
+
 def build_min_heap(input_arr: []):
     n = len(input_arr)
-    for i in reversed(range(n)):
+    for i in reversed(range(n // 2)):
         heapify_min_arr(input_arr, n, i)
 
     return input_arr

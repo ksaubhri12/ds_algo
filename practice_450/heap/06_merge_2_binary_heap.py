@@ -1,3 +1,5 @@
+# Very Simple, merge the arrays and then run the heapify on the complete array
+
 def merge_two_binary_heaps(heap_arr1: [], heap_arr2: [], n: int, m: int):
     heap_arr1.extend(heap_arr2)
     extend = (n + m) // 2

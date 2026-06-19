@@ -1,6 +1,12 @@
 from queue import PriorityQueue
 
 
+# Pick a priority queue, everything is sorted in itself,
+# Put the first element of each array
+# Pop the queue, put the popped element into the result
+# put the next element of that array into the queue
+# Do this till you exhaust the queue
+
 def merge_k_sorted_arr(input_mat: [[]], k: int):
     data_queue = PriorityQueue()
     for i in range(k):
@@ -11,7 +17,7 @@ def merge_k_sorted_arr(input_mat: [[]], k: int):
         first_element = data_queue.get()
         row_number = first_element[1]
         col_number = first_element[2]
-        if col_number + 1 < k:
+        if col_number + 1 < len(input_mat[row_number]):
             next_element = input_mat[row_number][col_number + 1]
             data_queue.put((next_element, row_number, col_number + 1))
         final_result.append(first_element[0])

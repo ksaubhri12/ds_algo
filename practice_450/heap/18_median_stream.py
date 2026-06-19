@@ -1,6 +1,14 @@
 from queue import PriorityQueue
 
 
+# The idea is to keep 2 heaps for two side of the array, sometime the result will be the peak
+# of any of those heap [un even number]
+# sometime the result will be the average of these two peak [even number]
+# we have to keep these two heaps in such a way that the difference is not more than 1
+# for lower half, go with max heap so that you get the max element of the lower half
+# for upper half, go with mean heap so that you get the min element of the upper half
+# as we have to keep the sorted array
+
 def median_stream(input_arr: []):
     output_arr = []
     min_heap = PriorityQueue()

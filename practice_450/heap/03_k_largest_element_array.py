@@ -1,3 +1,7 @@
+# To track the largest k, keep the min heap of size k
+# The smallest element in your heap is your "bouncer" —
+# Any new element that can't beat the bouncer doesn't deserve to be in the top K.
+# Any new element that can beat the bouncer evicts it and takes its place.
 from queue import PriorityQueue
 
 

@@ -1,3 +1,9 @@
+# for Kth smallest element
+# we create a max heap
+# we have k element in that heap
+# we iterate for the whole array, the element at top of
+# the heap top should be the kth min element, but if you get something smaller than that
+# you replace it with it
 from queue import PriorityQueue
 
 

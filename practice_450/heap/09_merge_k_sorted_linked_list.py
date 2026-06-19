@@ -1,3 +1,4 @@
+# same as merging k sorted array, go for the next one
 from queue import PriorityQueue
 
 
