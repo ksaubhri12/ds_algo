@@ -1,5 +1,9 @@
 """
 The last house is connected to the first house of this array
+Here also, robber can't pick two adjacent houses but along with that the
+first and last house are connected
+so assume that we have two array, one with first house and one without first house
+get the best of these two and add the code of non adjacent, you have your solution
 """
 
 

@@ -1,3 +1,12 @@
+"""
+Given an array we need to determine the max sum of non adjacent element
+
+Solution
+Non adjacent -> The trick is to either pick or not pick the element
+check what will happen and then get the max of these two options
+"""
+
+
 def max_sum_adj_non_element(arr: []):
     n = len(arr)
     return max_sum_adj_non_element_util(arr, n - 1)

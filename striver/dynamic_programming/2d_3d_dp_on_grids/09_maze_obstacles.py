@@ -1,3 +1,9 @@
+"""
+This is similar to unique grid path but with a catch
+here, the grid is not pure, there are some good cells and bad cells and you can't go to bad cells [1]
+so while traversing, you need to check if the cell from where I am coming is 1, if it is 1, answer is 0, straight forward
+"""
+
 def maze_obstacles_mem(maze_grid: [[]]):
     row_len = len(maze_grid)
     col_len = len(maze_grid[0])

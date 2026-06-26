@@ -1,3 +1,11 @@
+"""
+Need to find the minimum path sum that it will take from 0,0 to m-1, n-1
+
+two direction, right or down
+so compute sum of both and take min of them + value of that grid, build it and move forward
+"""
+
+
 def min_path_tab(grid_arr: [[]]):
     row_len = len(grid_arr)
     col_len = len(grid_arr[0])

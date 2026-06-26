@@ -1,3 +1,15 @@
+"""
+The question is a for a grid of size m*n
+what are the unique ways to reach from 0,0 to m-1,n-1
+assuming you can either move down or right
+the thing is to reach at m-1, n-1,
+
+you can come from the top or from the left
+hence sum of
+f(r-1, d) + f(r, d-1)
+"""
+
+
 def unique_grid(row_len, col_len):
     return unique_grid_rec_util(row_len - 1, col_len - 1)
 

@@ -1,3 +1,11 @@
+"""
+Here a ninja can't do same activity on two consecutive day
+so if on day i I have done activity 0 then on day i-1 I need to do activity
+1 or 2, whoever is maximum is my answer, we need to repeat this for every activity index
+here, two dimensions are the day index and the activity index
+this is what all the combinations are
+"""
+
 def max_points_rec(points_arr: [[]]):
     days = len(points_arr)
     max_points = float("-inf")
